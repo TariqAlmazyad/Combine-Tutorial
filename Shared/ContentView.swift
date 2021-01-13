@@ -27,6 +27,7 @@ struct ContentView: View {
                         Button(action: {}, label: {
                             HStack{
                                 Spacer()
+                                
                                 Text("Create Account")
                                 Spacer()
                             }.padding()
@@ -73,7 +74,7 @@ enum PasswordStatus {
 }
 
 
-enum isUsernameValid {
+enum UsernameStatus {
     case isEmpty
     case tooShort
     case valid
@@ -111,14 +112,14 @@ class UserViewModel: ObservableObject {
     }
     
     // [1] monitor username status while user is typing
-    private var usernameStatusPublisher: AnyPublisher<isUsernameValid, Never>{
+    private var usernameStatusPublisher: AnyPublisher<UsernameStatus, Never>{
         $user
             .debounce(for: 0.8, scheduler: RunLoop.main)
             .removeDuplicates()
             .compactMap{
-                if $0.name.isEmpty { return isUsernameValid.isEmpty }
-                if $0.name.count <= 3 { return isUsernameValid.tooShort }
-                return isUsernameValid.valid
+                if $0.name.isEmpty { return UsernameStatus.isEmpty }
+                if $0.name.count <= 3 { return UsernameStatus.tooShort }
+                return UsernameStatus.valid
             }
             .eraseToAnyPublisher()
     }

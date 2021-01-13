@@ -15,6 +15,8 @@
 		83427AA425AF0D09003C3D78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83427A7925AF0D08003C3D78 /* ContentView.swift */; };
 		83427AA525AF0D09003C3D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83427A7A25AF0D09003C3D78 /* Assets.xcassets */; };
 		83427AA625AF0D09003C3D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83427A7A25AF0D09003C3D78 /* Assets.xcassets */; };
+		83427ABA25AF623F003C3D78 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83427AB925AF623F003C3D78 /* SwiftUIView.swift */; };
+		83427ABB25AF623F003C3D78 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83427AB925AF623F003C3D78 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		83427A9A25AF0D09003C3D78 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83427A9E25AF0D09003C3D78 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		83427AA025AF0D09003C3D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83427AB925AF623F003C3D78 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 			children = (
 				83427A7825AF0D08003C3D78 /* Combine_TutorialApp.swift */,
 				83427A7925AF0D08003C3D78 /* ContentView.swift */,
+				83427AB925AF623F003C3D78 /* SwiftUIView.swift */,
 				83427A7A25AF0D09003C3D78 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -310,6 +314,7 @@
 			files = (
 				83427AA325AF0D09003C3D78 /* ContentView.swift in Sources */,
 				83427AA125AF0D09003C3D78 /* Combine_TutorialApp.swift in Sources */,
+				83427ABA25AF623F003C3D78 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +324,7 @@
 			files = (
 				83427AA425AF0D09003C3D78 /* ContentView.swift in Sources */,
 				83427AA225AF0D09003C3D78 /* Combine_TutorialApp.swift in Sources */,
+				83427ABB25AF623F003C3D78 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
